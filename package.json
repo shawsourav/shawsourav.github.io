@@ -1,34 +1,12 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.2.0",
-    "source-map-explorer": "^2.0.1",
-    "styled-components": "^4.3.2"
-  },
+  "name": "sourav-shaw",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "docz": "^2.0.0-rc.62",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   }
 }
