@@ -2,7 +2,7 @@
   "name": "sourav-shaw",
   "scripts": {
     "docz:dev": "docz dev",
-    "docz:build": "docz build"
+    "build": "docz build"
   },
   "dependencies": {
     "docz": "^2.0.0-rc.62",
