@@ -19,9 +19,9 @@ menu: Webpack
        time. So breaking the code into 1000 files is certainly a
        performance bottle neck. But what about HTTP2? Not really since the number of modules is of the range ~1000
     3. Unmaintable scripts with 1000 lines of code : There is problem with scope, size, readability and fragility
-    4. With advent of IIFE patterns, devs started exploiting it to concatenate modules since there was no scope leakage.
-       This along with tools like gulp, grunt would stitch the builds. But this also meant everytime you changed some
-       thing you need to rerun the build.
+    4. With advent of IIFE patterns, devs started exploiting it to concatenate scripts since there was no scope leakage.
+       This along with tools like gulp, grunt would stitch the script. But this also meant everytime you changed some
+       thing you need to rerun the build to stitch script. Also concatenating also meant introducing lot of dead code.
 
 ## Getting started
 
