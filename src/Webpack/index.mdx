@@ -30,6 +30,9 @@ menu: Webpack
 ```jsx
 const path = require("path");
 const {add, substract} = require("./math");
+
+//default export
+module.exports = (add, substract) => console.log(add, subsctract);
 ```
 
 ## Getting started
