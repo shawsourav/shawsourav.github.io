@@ -81,6 +81,48 @@ resources and other assets at the same time. And this is when **Webpack** was bo
     3. Rich and vast ecosystem
     4. Is the most performant way to ship Javascript
 
+##### Three ways you can use webpack
+    1.Webpack config is just a CommonJS export
+
+```jsx
+module.exports = {
+    entry: {
+        vendor: './src/vendors.js',
+        main: './src/main.browser.js'
+    },
+    output: {
+        path: 'dist/',
+        filename: '[name].bundle.js'
+    }
+}
+```
+
+    2. Webpack CLI : Things we do through config can also be done with the CLI
+
+```jsx
+$> webpack <entry.js> <result.js> --colors --progress
+$> webpack dev-server --port=9000
+```
+
+    3. Node API
+
+```jsx
+var webpack = require("webpack");
+
+// returns a compiler instance
+webpack({
+
+    // configuration object here
+
+}, function(err, stats){
+
+    //...
+    // compiler callback
+    console.error(err);
+
+})
+```
+
 ## The core concepts
 
 ## Starting out right
