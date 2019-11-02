@@ -25,7 +25,12 @@ menu: Webpack
        And also slow running apps.
     5. With node js landing in to the game, there was another problem. How do you load script if there is no HTML.
 
-##### And thus the birth of module patterns like CommonJS.
+##### And thus the birth of module patterns like CommonJS using  `require` syntax that allowed injecting other pieces of module into current module.
+
+```jsx
+const path = require("path");
+const {add, substract} = require("./math");
+```
 
 ## Getting started
 
