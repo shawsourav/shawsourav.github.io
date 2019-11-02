@@ -59,6 +59,9 @@ const diff = substract(10,2);
     2. With AMD + Common JS, the syntax itself became difficult to understand
 
 ##### Then came EcmaScript module system
+    1. However, ESM for Node is still up in the air
+    2. For browsers, it is incredibly slow. Slow to the point that it becomes unusable after 10 modules. Because,
+       the browser at run time has to fetch packages, resolve it, parse it etc. Thus, ESM directly for browsers is not recommended.
 
 ```jsx
 import {add, substract, divide} from './math'
