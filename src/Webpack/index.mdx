@@ -8,15 +8,15 @@ menu: Webpack
 
 ## Why webpack
 
-How do we use Javascript in the browser? Currently there are only two ways of doing that.\s\s
+How do we use Javascript in the browser? Currently there are only two ways of doing that.
         - First is to add a `script` tag and load the JS file
         - Write the JS directly in HTML file : *This obviously doesn't scale*
 
-*What are the problem with the above two approaches*\s\s
-**Doesn't SCALE 📈**\s\s
+*What are the problem with the above two approaches*
+**Doesn't SCALE 📈**
         1. Either we have too many scripts which we try to load from HTML
         2. Browser bottlenecks : There are only certain number of concurrent requests that can fetch data at a single time. So breaking the code into 1000 files is certainly a
-        performance bottle neck. But what about HTTP2?
+        performance bottle neck. But what about HTTP2? Not really since the number of modules is of the range ~1000
 
 ## Getting started
 
