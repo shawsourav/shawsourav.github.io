@@ -28,11 +28,24 @@ menu: Webpack
 ##### And thus the birth of module patterns like CommonJS using  `require` syntax that allowed injecting other pieces of module into current module.
 
 ```jsx
-const path = require("path");
-const {add, substract} = require("./math");
+//File 1
 
 //default export
-module.exports = (add, substract) => console.log(add, subsctract);
+module.exports = (first, second) => first/second;
+
+//File 2
+const divideFn = require("./division");
+
+//Named exports
+exports.add = (first, second) => first + second;
+exports.substract = (first, second) => first - second;
+exports.divide = divideFn;
+
+//File 3
+const path = require("path");
+const {add, substract} = require("./math");
+const sum = add(5,5);
+const diff = substract(10,2);
 ```
 
 ## Getting started
