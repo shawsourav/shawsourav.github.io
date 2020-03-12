@@ -123,6 +123,43 @@ webpack({
 })
 ```
 
+##### So what we consider as important as of now are:
+    - How do we scale?
+    - How do we maintain?
+    - How do we make it performant?
+
 ## The core concepts
+To run webpack we just provide it in scripts in `package.json`
+
+```jsx
+  "scripts": {
+    "webpack": "webpack"
+  },
+```
+
+Now when we run webpack through CLI command `yarn run webpack` we get this
+```jsx
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to
+'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/
+```
+Specifying the mode helps webpack trade off between build speed vs production quality. To specify mode we can have a
+new command and compose it to the previous command while passing arguments to it.
+
+```jsx
+  "scripts": {
+    "webpack": "webpack",
+    "dev": "yarn run webpack -- --mode development",
+    "prod": "yarn run webpack -- --mode production"
+
+  },
+```
+
+#### Setting up debugging
+To debug a node script, we can mention `node --inspect --inspectbrk ./src/index.js`
+
+
+
 
 ## Starting out right
